@@ -1,10 +1,19 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: #00796b;
+}
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -12,7 +21,6 @@ body {
   color: #333;
 }
 
-/* Container */
 .container {
   width: 90%;
   max-width: 1000px;
@@ -20,21 +28,28 @@ body {
   text-align: center;
 }
 
-/* Header */
+
 header {
-  background: url('../images/woman-936549_1280.jpg') no-repeat center center/cover;
+  background: url('../images/woman-936549_1280.jpg');
+  background-size: cover;
   height: 100vh;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
+
+
+.header-container{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 header h1 {
   font-size: 3rem;
   margin-bottom: 10px;
+  
 }
 
 header p {
@@ -49,14 +64,14 @@ header p {
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  
 }
 
 .btn:hover {
   background-color: #e0f2f1;
 }
 
-/* Services Section */
+
 .services {
   padding: 60px 0;
   background-color: #f9f9f9;
@@ -108,6 +123,7 @@ header p {
 footer {
   background-color: #004d40;
   color: #fff;
+  font-style: italic;
   text-align: center;
   padding: 20px 0;
 }
